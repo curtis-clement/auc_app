@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
 
-import 'app_colors.dart';
-import 'app_typography.dart';
+import 'package:auc_app/core/theme/app_colors.dart';
+import 'package:auc_app/core/theme/app_typography.dart';
 
 class AppTheme {
   static ThemeData light() {
     final colorScheme = ColorScheme.fromSeed(
       seedColor: AppColors.primary,
       brightness: Brightness.light,
-    ).copyWith(
-      secondary: AppColors.secondary,
-      tertiary: AppColors.tertiary,
-    );
+    ).copyWith(secondary: AppColors.secondary, tertiary: AppColors.tertiary);
 
     final baseTextTheme = Typography.englishLike2018.apply(
       bodyColor: colorScheme.onSurface,
@@ -31,10 +28,7 @@ class AppTheme {
     final colorScheme = ColorScheme.fromSeed(
       seedColor: AppColors.primary,
       brightness: Brightness.dark,
-    ).copyWith(
-      secondary: AppColors.secondary,
-      tertiary: AppColors.tertiary,
-    );
+    ).copyWith(secondary: AppColors.secondary, tertiary: AppColors.tertiary);
 
     final baseTextTheme = Typography.englishLike2018.apply(
       bodyColor: colorScheme.onSurface,
@@ -50,4 +44,3 @@ class AppTheme {
     );
   }
 }
-

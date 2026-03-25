@@ -6,4 +6,3 @@ class AppColors {
   static const Color secondary = Color(0xFF1F1F1F); // dark charcoal grey
   static const Color tertiary = Color(0xFFFFFFFF); // white
 }
-

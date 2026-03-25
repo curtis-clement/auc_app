@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'pages/landing_page.dart';
-import 'theme/app_theme.dart';
+
+import 'package:auc_app/core/theme/app_theme.dart';
+import 'package:auc_app/core/router/app_router.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,16 +10,14 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'AUC App',
       theme: AppTheme.light(),
       darkTheme: AppTheme.dark(),
       themeMode: ThemeMode.system,
-      home: const LandingPage(),
+      routerConfig: appRouter,
     );
   }
 }
-
