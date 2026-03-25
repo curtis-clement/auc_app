@@ -6,3 +6,4 @@ bool primaryNavPathMatches(String currentPath, String routePath) {
   }
   return currentPath == routePath || currentPath.startsWith('$routePath/');
 }
+
